@@ -8,3 +8,5 @@ sed -r 's/^([0-9]{1,3})\.([0-9]{1,3})\.([0-9]{1,3})\.([0-9]{1,3})/\4.\3.\2.\1/' 
 sudo dpkg -i /path/to/deb/file
 sudo apt-get install -f
 
+## Rip Passwords from Win Hash dump (fgdump)
+john –format=LM –wordlist=/root/usr/share/john/password_john.txt hash.txt
